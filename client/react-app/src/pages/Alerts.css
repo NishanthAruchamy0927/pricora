@@ -1,0 +1,111 @@
+.alerts-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 36px 24px 80px;
+}
+
+.page-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.page-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.empty-icon { font-size: 56px; margin-bottom: 16px; }
+
+.alerts-loading, .alerts-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text-muted);
+}
+
+.alerts-empty h3 { font-size: 20px; color: var(--text-primary); margin-bottom: 8px; }
+.alerts-empty p { font-size: 15px; margin-bottom: 20px; }
+.alerts-empty a {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.alerts-list { display: flex; flex-direction: column; gap: 14px; }
+
+.alert-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--bg-card);
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.alert-item-img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: var(--bg);
+  flex-shrink: 0;
+}
+
+.alert-info { flex: 1; min-width: 0; }
+
+.alert-info a {
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.alert-info a:hover { color: var(--primary); }
+
+.alert-prices {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.alert-target { color: var(--primary); font-weight: 600; }
+.alert-current { color: var(--text-secondary); }
+
+.alert-status {
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.alert-status.active { background: #dbeafe; color: #1d4ed8; }
+.alert-status.triggered { background: #dcfce7; color: #166534; }
+
+.alert-delete {
+  background: var(--danger-light);
+  color: var(--danger);
+  border: none;
+  padding: 9px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.alert-delete:hover { background: #fecaca; }

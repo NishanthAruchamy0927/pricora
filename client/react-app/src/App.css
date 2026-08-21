@@ -1,0 +1,4 @@
+/* App-level layout */
+.page-wrapper {
+  min-height: calc(100vh - 70px);
+}
